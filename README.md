@@ -1,6 +1,7 @@
 # html2hytale
 
 ![demo](media/demo.png)
+![demo2](media/demo2.png)
 
 (Live demo at play.hyhub.net)
 
