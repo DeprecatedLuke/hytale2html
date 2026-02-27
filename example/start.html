@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <base href="../" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HyHub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind-init.js"></script>
+    <link rel="stylesheet" href="shared.css" />
+  </head>
+  <body class="bg-hy-darker text-white h-screen w-screen">
+    <div class="relative h-full w-full pr-14">
+      <div data-hy-id="Background" data-hy-anchor="left right top bottom" data-hy-skip-render class="absolute inset-0">
+        <img
+          src="reference/Screenshot_20260205_073516.png"
+          alt=""
+          class="w-full h-full object-cover"
+        />
+      </div>
+
+      <div
+        data-hy-id="GradientOverlay"
+        data-hy-anchor="left right top bottom"
+        class="absolute inset-0 gradient-overlay"
+      ></div>
+
+      <!-- Navigation: absolute viewport center -->
+      <nav class="fixed top-[calc(50%+34px)] -translate-y-1/2 left-14 z-20 flex flex-col gap-2">
+        <a
+          data-hy-id="NavPlay"
+          data-hy-bleed="40"
+          class="menu-item play-btn relative text-7xl font-black tracking-wide py-3 diamond active-item cursor-pointer select-none"
+        >
+          PLAY
+        </a>
+        <a
+          data-hy-id="NavSurvival"
+          data-hy-bleed="23"
+          class="menu-item nav-btn relative text-3xl font-bold tracking-wide py-1 diamond text-white/90 hover:text-hy-cyan cursor-pointer select-none"
+        >
+          SURVIVAL
+        </a>
+        <a
+          data-hy-id="NavMinigames"
+          data-hy-bleed="23"
+          class="menu-item nav-btn relative text-3xl font-bold tracking-wide py-1 diamond text-white/90 hover:text-hy-cyan cursor-pointer select-none"
+        >
+          MINIGAMES
+        </a>
+        <a
+          data-hy-id="NavStore"
+          data-hy-bleed="23"
+          class="menu-item nav-btn relative text-3xl font-bold tracking-wide py-1 diamond text-white/90 hover:text-hy-cyan cursor-pointer select-none"
+        >
+          STORE
+        </a>
+        <a
+          data-hy-id="NavDiscord"
+          data-hy-bleed="23"
+          class="menu-item nav-btn relative text-3xl font-bold tracking-wide py-1 diamond text-white/90 hover:text-hy-cyan cursor-pointer select-none"
+        >
+          DISCORD
+        </a>
+      </nav>
+
+      <!-- Main Content -->
+      <div class="relative z-10 h-full flex flex-col">
+        <div class="flex-1 flex px-6 pt-4">
+          <!-- Left: Logo + Nav -->
+          <div class="pl-8">
+            <img
+              data-hy-id="HeaderLogo"
+              src="reference/header.png"
+              alt="HyHub"
+              class="h-72 object-contain -ml-4 mt-14"
+            />
+          </div>
+
+          <!-- Right Panel: News + Gamemodes -->
+          <aside class="fixed right-[72px] top-[calc(50%+34px)] -translate-y-1/2 z-20 flex flex-col gap-3 w-80">
+            <!-- News -->
+            <div
+              data-hy-id="NewsPanel"
+              data-hy-anchor="right top"
+              class="glass bg-black/40 rounded-lg p-4 border border-hy-cyan/10"
+            >
+              <div class="flex items-center justify-between mb-3">
+                <h3 class="font-bold text-hy-cyan text-sm tracking-wider">NEWS</h3>
+              </div>
+              <div class="space-y-2 text-sm">
+                <div class="flex items-start gap-2 cursor-pointer hover:bg-white/5 p-1 rounded">
+                  <div class="w-1.5 h-1.5 bg-hy-cyan rounded-full mt-1.5"></div>
+                  <div>
+                    <p class="font-medium">Discord linking is live</p>
+                    <p class="text-xs text-white/70">Use /link for Member rank</p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-2 cursor-pointer hover:bg-white/5 p-1 rounded">
+                  <div class="w-1.5 h-1.5 bg-hy-cyan rounded-full mt-1.5"></div>
+                  <div>
+                    <p class="font-medium text-white/90">Peaceful RPG Survival now live</p>
+                    <p class="text-xs text-white/70">PvP-free survival + towns</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Changelog -->
+            <button
+              data-hy-id="ChangelogButton"
+              data-hy-anchor="right top"
+              class="glass bg-black/40 hover:bg-black/50 rounded-lg p-3 btn-press border border-hy-cyan/40"
+            >
+              <span class="menu-item text-sm font-bold tracking-wider text-hy-cyan">CHANGELOG</span>
+              <span class="text-xs text-hy-cyan/80 ml-2">v2.0.0</span>
+            </button>
+
+            <!-- Popular Gamemodes -->
+            <div class="flex-1 flex flex-col">
+              <h4
+                data-hy-id="GamemodesHeader"
+                data-hy-anchor="right top"
+                class="glass bg-black/40 rounded px-3 py-1.5 text-xs text-hy-cyan font-bold tracking-wider mb-2 uppercase inline-block w-fit"
+              >
+                Popular Games
+              </h4>
+              <div class="flex flex-col gap-2 overflow-y-auto scrollbar-thin">
+                <div
+                  data-hy-id="ModePvpHub" data-hy-role="button"
+                  data-hy-anchor="right top"
+                  class="mode-row rounded-lg p-3 cursor-pointer flex items-center gap-3"
+                >
+                  <img src="pages/icons/pvp-swords.png" class="w-12 h-12 rounded object-cover flex-shrink-0" alt="" />
+                  <div class="flex-1 min-w-0">
+                    <h5 class="font-bold text-sm">PvP Hub</h5>
+                    <p class="text-xs text-gray-500">Duels, KitPvP</p>
+                  </div>
+                  <div class="flex items-center gap-1.5">
+                    <div class="w-1.5 h-1.5 bg-green-500 rounded-full"></div>
+                    <span
+                      data-hy-id="ModePvpHubCount"
+                      data-hy-text="1,024"
+                      class="text-xs text-green-400 font-medium tabular-nums w-10 text-right"
+                    >
+                      1,024
+                    </span>
+                  </div>
+                </div>
+
+                <div
+                  data-hy-id="ModeHardcoreSurvival" data-hy-role="button"
+                  data-hy-anchor="right top"
+                  class="mode-row rounded-lg p-3 cursor-pointer flex items-center gap-3"
+                >
+                  <img src="pages/icons/hardcore-skull.png" class="w-12 h-12 rounded object-cover flex-shrink-0" alt="" />
+                  <div class="flex-1 min-w-0">
+                    <h5 class="font-bold text-sm">Hardcore Survival</h5>
+                    <p class="text-xs text-gray-500">Full PvP, no mercy</p>
+                  </div>
+                  <div class="flex items-center gap-1.5">
+                    <div class="w-1.5 h-1.5 bg-green-500 rounded-full"></div>
+                    <span
+                      data-hy-id="ModeHardcoreSurvivalCount"
+                      data-hy-text="54"
+                      class="text-xs text-green-400 font-medium tabular-nums w-10 text-right"
+                    >
+                      54
+                    </span>
+                  </div>
+                </div>
+
+                <div
+                  data-hy-id="ModePeacefulSurvival" data-hy-role="button"
+                  data-hy-anchor="right top"
+                  class="mode-row rounded-lg p-3 cursor-pointer flex items-center gap-3"
+                >
+                  <img src="pages/icons/peaceful-tree.png" class="w-12 h-12 rounded object-cover flex-shrink-0" alt="" />
+                  <div class="flex-1 min-w-0">
+                    <h5 class="font-bold text-sm">Peaceful RPG Survival</h5>
+                    <p class="text-xs text-gray-500">PvP-free, towns, claim land</p>
+                  </div>
+                  <div class="flex items-center gap-1.5">
+                    <div class="w-1.5 h-1.5 bg-green-500 rounded-full"></div>
+                    <span
+                      data-hy-id="ModePeacefulSurvivalCount"
+                      data-hy-text="311"
+                      class="text-xs text-green-400 font-medium tabular-nums w-10 text-right"
+                    >
+                      311
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+
+      <!-- Thin Friends Sidebar -->
+    </div>
+    <script src="hud-overlay.js"></script>
+  </body>
+</html>

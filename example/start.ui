@@ -1,0 +1,73 @@
+Group #Root {
+  Anchor: (Full: 0);
+  Group #GradientOverlay {
+    Anchor: (Top: 0, Left: 0, Right: 0, Bottom: 0);
+    Background: "Example/Shared/t7cf1f370394786b8d2bc2e34b75a758bc8831cc139083ae9a20d9198fb9a133f.png";
+  }
+  Button #NavPlay {
+    Anchor: (Top: 382, Left: 16, Width: 273, Height: 176);
+    Style: ButtonStyle(Default: (Background: "Example/Shared/t6aaa313e080434d694ae4e9e9697ec6cf5801d19a696d21d9f7bf57c5ac5a173.png"), Hovered: (Background: "Example/Shared/td58e52947d057f077753cb3027234246aace1c701eed2795da252447c00ac84d.png"), Pressed: (Background: "Example/Shared/t30b72bf01a27809777d2071c0d23eea903b87325805610e537bb1b4264651129.png"));
+  }
+  Button #NavSurvival {
+    Anchor: (Top: 503, Left: 33, Width: 239, Height: 90);
+    Style: ButtonStyle(Default: (Background: "Example/Shared/tbdc89ec07d3e7d6d3658cc781c1dd1e2ca5c279420ed0d8cea9bb6784ffc5a3b.png"), Hovered: (Background: "Example/Shared/tcab3b99d10e1b738f6e4b0f6e00015925e56178ce0199373032f72ce78e74cfc.png"), Pressed: (Background: "Example/Shared/t3a3bb51b0a588f4fec8f63a9d7cd7e492cbdccc7a16aada9091b61e983b34236.png"));
+  }
+  Button #NavMinigames {
+    Anchor: (Top: 555, Left: 33, Width: 239, Height: 90);
+    Style: ButtonStyle(Default: (Background: "Example/Shared/tad7e4ab5815eb0aa7064707b33c8b544d7a24c38fd5644638b907e4dd32892b4.png"), Hovered: (Background: "Example/Shared/tf34363d5ff3de189a860d620f2fb6330abacf0b48ef86a4bfc9849d29c6ecb23.png"), Pressed: (Background: "Example/Shared/tef78ea69dbf9e094573ecedb04e965a8e02099f3c7de04eb3d60e1f42b5ff236.png"));
+  }
+  Button #NavStore {
+    Anchor: (Top: 607, Left: 33, Width: 239, Height: 90);
+    Style: ButtonStyle(Default: (Background: "Example/Shared/t6b6f6011c52bcf200c3471234a95005f64f9139352fdb39a37fe5c2e33bc8e98.png"), Hovered: (Background: "Example/Shared/ta937453afd1f861c64e28834e85a1520eb35dfc080404014cd28335db1ff7732.png"), Pressed: (Background: "Example/Shared/t9b8d95bd888fd1b1b6fca8f3f64a5530a1ea194bc303bfb252e0c15ae849e8ef.png"));
+  }
+  Button #NavDiscord {
+    Anchor: (Top: 659, Left: 33, Width: 239, Height: 90);
+    Style: ButtonStyle(Default: (Background: "Example/Shared/t2c9260318e64017a3e92c5f311d8db116a32665e2c458995c8ee183561bd8880.png"), Hovered: (Background: "Example/Shared/tc322a371cb7a144b23aaf4763be08f5c77dfc5d12e2d9c185fdedb48e1a8a895.png"), Pressed: (Background: "Example/Shared/teec19b86ac63784bca376c1c831de4d9230af8f0d35e9a0c56fbad6be30d43de.png"));
+  }
+  Group #HeaderLogo {
+    Anchor: (Top: 72, Left: 40, Width: 611, Height: 288);
+    Background: "Example/Shared/t5ab3d5848317033d440df327dcc7e7f97436287345f60b1990109c3b96a84c22.png";
+  }
+  Group #NewsPanel {
+    Anchor: (Top: 319, Right: 72, Width: 320, Height: 162);
+    Background: "Example/Shared/t30bb87cc7a48a1c26e272a61071c8344ae093e338574cfd897f847b8b8fd9313.png";
+  }
+  Button #ChangelogButton {
+    Anchor: (Top: 493, Right: 72, Width: 320, Height: 50);
+    Style: ButtonStyle(Default: (Background: "Example/Shared/t08d108e47934c30237fc27fa01129751ce62e3c0a24e683c20450b6c9bf7e57f.png"), Hovered: (Background: "Example/Shared/t080c39479517b85500f78dad884d6cc35b44bbb9fd37d32a7b22686ede813d8f.png"), Pressed: (Background: "Example/Shared/t866e1731a837318bd7cd38397b9fff1157a986e6c65ee27e0985f5cf42109520.png"));
+  }
+  Group #GamemodesHeader {
+    Anchor: (Top: 555, Right: 254, Width: 138, Height: 28);
+    Background: "Example/Shared/tb0f9a81e2d4fb719afbe5acedcd0b2ba3b1b37d1d4246f8173579829c9cd4b04.png";
+  }
+  Button #ModePvpHub {
+    Anchor: (Top: 591, Right: 72, Width: 320, Height: 74);
+    Padding: (Full: 13);
+    Style: ButtonStyle(Default: (Background: "Example/Shared/t8a29340b144d6cb9af6f2cd94cb37ae769b180bea7719778d24f0e13fa60ff65.png"), Hovered: (Background: "Example/Shared/tcf3e43950cd50ec453437d727130f5df15b0db542133922b58a8161110b12e0b.png"), Pressed: (Background: "Example/Shared/t87a725c080c518f8478dee6fd0f564031b8b004ba81e9a50c6d9873f3c54545f.png"));
+    Label #ModePvpHubCount {
+      Anchor: (Top: 16, Left: 254, Width: 40, Height: 16);
+      Text: "1,024";
+      Style: (FontSize: 12, TextColor: #4ade80, Wrap: true, HorizontalAlignment: End);
+    }
+  }
+  Button #ModeHardcoreSurvival {
+    Anchor: (Top: 673, Right: 72, Width: 320, Height: 74);
+    Padding: (Full: 13);
+    Style: ButtonStyle(Default: (Background: "Example/Shared/t003e68e47cd077f74154b46051549d148032ceadd8e800aab75360489a4e0725.png"), Hovered: (Background: "Example/Shared/t0676966249aaebb37924f43d2f582e9eaa050b7259a64925b260e3dfa52e9156.png"), Pressed: (Background: "Example/Shared/t7c97291bff1cd5b4813fb916f371b733cb9e494d340c07d072e07ea6abde9bab.png"));
+    Label #ModeHardcoreSurvivalCount {
+      Anchor: (Top: 16, Left: 254, Width: 40, Height: 16);
+      Text: "54";
+      Style: (FontSize: 12, TextColor: #4ade80, Wrap: true, HorizontalAlignment: End);
+    }
+  }
+  Button #ModePeacefulSurvival {
+    Anchor: (Top: 755, Right: 72, Width: 320, Height: 74);
+    Padding: (Full: 13);
+    Style: ButtonStyle(Default: (Background: "Example/Shared/t63a2a469b932424c38cb182e91f2bff7e25bc253d8afb789231432b5bc958592.png"), Hovered: (Background: "Example/Shared/t929275d09e0429dc596998405beaff21d80c9388e642c37e14fa13f506b6a2d5.png"), Pressed: (Background: "Example/Shared/t25e8a6618700ad386ecff7416fa870a5bed694536e3533ccc4f90d22b976558a.png"));
+    Label #ModePeacefulSurvivalCount {
+      Anchor: (Top: 16, Left: 254, Width: 40, Height: 16);
+      Text: "311";
+      Style: (FontSize: 12, TextColor: #4ade80, Wrap: true, HorizontalAlignment: End);
+    }
+  }
+}
